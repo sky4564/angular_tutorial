@@ -1,0 +1,12 @@
+<p>login works!</p>
+
+<div>
+    <div>welcome</div>
+    <input type="text" placeholder="id" [(formControl]="id"/>
+    <input type="text" placeholder="passw" [formControl]= "pwd">
+    <button (click) = 'tryToLogin()'>login!</button>
+</div>
+<span *ngIf="warn">더크게 !</span>
+<div *ngIf="getMsg" [ngClass]="styleArray">{{getMsg}}</div>
+
+
