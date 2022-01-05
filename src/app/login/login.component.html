@@ -1,12 +1,24 @@
-<p>login works!</p>
-
+<div class="test">Wellcome</div>
+<input type="text" placeholder="id"  [formControl]="id"/>
+<input type="text" placeholder="password"  [formControl]="pwd"/>
+<button (click)='tryToLogin()'>Login</button>
 <div>
-    <div>welcome</div>
-    <input type="text" placeholder="id" [(formControl]="id"/>
-    <input type="text" placeholder="passw" [formControl]= "pwd">
-    <button (click) = 'tryToLogin()'>login!</button>
+
+<span  
+    [style]= "'color: purple'"
+    style = "color: purple;"
+    *ngIf="pwd.value && pwd.value.length < 4">
+    비밀 번호 {{pwd.value}}는 4자리 이상이어야 합니다.
+</span>
+<!-- 그냥 style 로 넣을수 있지만 [] 대괄호 안에 넣으면 
+컴포넌트간 이동 및 조작이 가능하다 -->
+
 </div>
-<span *ngIf="warn">더크게 !</span>
-<div *ngIf="getMsg" [ngClass]="styleArray">{{getMsg}}</div>
+<div *ngIf="getMessage" [ngClass]="styleArray">
+   {{getMessage}}
+</div>
+
+
+
 
 

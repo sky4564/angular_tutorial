@@ -1,3 +1,7 @@
 
-<app-login *ngIf="loginBool" [visible1] = 'loginBool' (sendMyEvent)="getEventThanks($event)"></app-login>
+<app-login *ngIf="loginBool"
+            [visible1] = 'loginBool' 
+            (sendMyEvent)="getEventThanks($event)">
+</app-login>
+
 <app-dashboard *ngIf="boardBool"></app-dashboard>

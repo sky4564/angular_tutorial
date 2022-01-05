@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   loginBool = true;
-  boardBool = false;
+  boardBool = true;
 
   getEventThanks(e:any){
     console.log(e + " clear")

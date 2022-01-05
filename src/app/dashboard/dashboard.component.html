@@ -1,1 +1,13 @@
 <p>dashboard works!</p>
+<div *ngIf="a">
+    <div *ngFor="let item of DataArray">
+        <input type="text" [value]="item.text" />
+        <input type="number" [value]="item.number" />
+        <input type="button" value="전부보기" (click)="showData()"/> 
+    </div>
+</div>
+
+
+
+
+    

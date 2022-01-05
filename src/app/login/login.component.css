@@ -1,3 +1,11 @@
-i_dx{
+.wrong_id{
     color: red;
+}
+.wrong_pw{
+    color: royalblue;
+}
+
+.test{
+    color: blue;
+    text-align: center;
 }
